@@ -2,11 +2,11 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="main-visual">
-      <div className="main-visual-inner">
-        <p className="main-visual-title">PPHOS</p>
-        <p className="main-visual-subtitle">PORTFOLIO</p>
-        <p className="main-visual-text">
+    <div className="flex items-center justify-center h-85v">
+      <div className="py-0 px-20">
+        <p className="text-6xl font-bold leading-tight mb-1 tracking-widest">PPHOS</p>
+        <p className="text-xl font-bold leading-none mb-10 tracking-wider">PORTFOLIO</p>
+        <p>
           This is Hero text
         </p>
       </div>

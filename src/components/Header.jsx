@@ -2,8 +2,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="fixed top-1 z-1 w-full bg-white shadow">
-    <div className="flex items-center justify-between py-5 px-20">
+    <header className="fixed -top-1 z-10 w-full bg-white shadow">
+    <div className="flex items-center justify-between py-6 px-20">
         <h1 className="text-2xl font-bold leading-5 mr-20">
           <a href=".">PPHOS</a>
         </h1>
