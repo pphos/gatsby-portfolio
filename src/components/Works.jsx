@@ -34,7 +34,7 @@ const worksItem = [
 const Works = () => {
   return (
     <section className="py-20 bg-gray-100" id="works">
-      <div className="max-w-7xl my-0 mx-auto py-0 px-2">
+      <div className="max-w-7xl my-0 mx-auto py-3 px-2">
         <Title>WORKS</Title>
         <div className="flex flex-wrap -mb-5">
           { worksItem.map((item, index) => {

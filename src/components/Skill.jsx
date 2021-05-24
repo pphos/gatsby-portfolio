@@ -1,80 +1,62 @@
-import React from 'react';
+import React from "react";
+
+import Title from '../components/shared/Title'
+import SkillItem from '../components/SkillItem';
+
+const skillItem = [
+  {
+    imageUrl: "/images/icon_skill.png",
+    name: "HTML5/CSS3",
+    text: "テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。"
+  },
+  {
+    imageUrl: "/images/icon_skill.png",
+    name: "WordPress",
+    text: "テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。"
+  },
+  {
+    imageUrl: "/images/icon_skill.png",
+    name: "JavaScript",
+    text: "テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。"
+  },
+  {
+    imageUrl: "/images/icon_skill.png",
+    name: "Photoshop",
+    text: "テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。"
+  },
+  {
+    imageUrl: "/images/icon_skill.png",
+    name: "Illustrator",
+    text: "テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。"
+  },
+  {
+    imageUrl: "/images/icon_skill.png",
+    name: "XD",
+    text: "テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。"
+  },
+];
 
 const Skill = () => {
   return (
-    <section className="skill section" id="skill">
-          <div className="inner">
-            <h2 className="title">SKILL</h2>
-            <div className="skill-list">
-              <div className="skill-item">
-                <p className="skill-img">
-                  <img src="/images/icon_skill.png" alt="" />
-                </p>
-                <div className="skill-body">
-                  <h3 className="skill-name">HTML5/CSS3</h3>
-                  <p className="skill-text">
-                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
-                  </p>
-                </div>
-              </div>
-              <div className="skill-item">
-                <p className="skill-img">
-                  <img src="/images/icon_skill.png" alt="" />
-                </p>
-                <div className="skill-body">
-                  <h3 className="skill-name">WordPress</h3>
-                  <p className="skill-text">
-                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
-                  </p>
-                </div>
-              </div>
-              <div className="skill-item">
-                <p className="skill-img">
-                  <img src="/images/icon_skill.png" alt="" />
-                </p>
-                <div className="skill-body">
-                  <h3 className="skill-name">JavaScript</h3>
-                  <p className="skill-text">
-                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
-                  </p>
-                </div>
-              </div>
-              <div className="skill-item">
-                <p className="skill-img">
-                  <img src="/images/icon_skill.png" alt="" />
-                </p>
-                <div className="skill-body">
-                  <h3 className="skill-name">Photoshop</h3>
-                  <p className="skill-text">
-                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
-                  </p>
-                </div>
-              </div>
-              <div className="skill-item">
-                <p className="skill-img">
-                  <img src="/images/icon_skill.png" alt="" />
-                </p>
-                <div className="skill-body">
-                  <h3 className="skill-name">Illustrator</h3>
-                  <p className="skill-text">
-                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
-                  </p>
-                </div>
-              </div>
-              <div className="skill-item">
-                <p className="skill-img">
-                  <img src="/images/icon_skill.png" alt="" />
-                </p>
-                <div className="skill-body">
-                  <h3 className="skill-name">XD</h3>
-                  <p className="skill-text">
-                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    <section className="py-20" id="skill">
+      <div className="max-w-7xl my-0 mx-auto py-3 px-2">
+        <Title>SKILL</Title>
+        <div className="flex flex-wrap -mb-5">
+          {
+            skillItem.map((item, index) => {
+              return (
+                <SkillItem
+                  key={index}
+                  imageUrl={item.imageUrl}
+                  name={item.name}
+                  text={item.text}
+                />
+              );
+            })
+          }
+        </div>
+      </div>
+    </section>
   );
 };
 
