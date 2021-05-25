@@ -4,7 +4,7 @@ const HeaderItem = ({ name, link}) => {
   return (
     <li>
       <a
-        className="group relative text-sm text-blue-500 inline-block py-1 px-0 transition-width delay-300 tracking-wider mr-4"
+        className="group relative text-sm text-blue-500 font-semibold inline-block py-1 px-0 transition-width delay-300 tracking-wider mr-4"
         href={link}
       >
         {name}
