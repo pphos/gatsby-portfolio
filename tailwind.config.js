@@ -18,6 +18,9 @@ module.exports = {
         "90v": "90vh",
         "100v": "100vh",
       },
+      backgroundImage: theme => ({
+        'hero-pattern': "linear-gradient(to left, rgba(54, 209, 220, 0.6) , rgba(91, 134, 229, 0.6)), url('/images/hero_image.jpg')"
+      }),
     },
   },
   variants: {
