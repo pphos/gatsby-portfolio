@@ -1,10 +1,10 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       transitionProperty: {
-        width: 'width',
+        width: "width",
       },
       height: {
         "10v": "10vh",
@@ -19,14 +19,15 @@ module.exports = {
         "100v": "100vh",
       },
       backgroundImage: theme => ({
-        'hero-pattern': "linear-gradient(to left, rgba(54, 209, 220, 0.6) , rgba(91, 134, 229, 0.6)), url('/images/hero_image.jpg')"
+        "hero-pattern":
+          "linear-gradient(to left, rgba(54, 209, 220, 0.6) , rgba(91, 134, 229, 0.6)), url('/images/hero_image.jpg')",
       }),
     },
   },
   variants: {
     extend: {
-      width: ['group-hover'],
+      width: ["group-hover"],
     },
   },
   plugins: [],
-}
+};
