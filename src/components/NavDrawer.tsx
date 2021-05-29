@@ -12,7 +12,13 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
-const NavDrawer: React.VFC = () => {
+import { NavMenusType } from '../types';
+
+type Props = {
+  menus: NavMenusType;
+};
+
+const NavDrawer: React.VFC<Props> = ({ menus }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef<HTMLButtonElement>(null);
 
@@ -31,34 +37,21 @@ const NavDrawer: React.VFC = () => {
           <DrawerContent>
             <DrawerCloseButton />
             <DrawerBody>
-              <Stack as="nav" mt="5">
-                <Link
-                  color="blue.500"
-                  fontWeight="semibold"
-                  fontSize="xl"
-                  p="3"
-                  _hover={{ textDecoration: 'none', bg: 'gray.100' }}
-                >
-                  WORKS
-                </Link>
-                <Link
-                  color="blue.500"
-                  fontWeight="semibold"
-                  fontSize="xl"
-                  p="3"
-                  _hover={{ textDecoration: 'none', bg: 'gray.100' }}
-                >
-                  SKILL
-                </Link>
-                <Link
-                  color="blue.500"
-                  fontWeight="semibold"
-                  fontSize="xl"
-                  p="3"
-                  _hover={{ textDecoration: 'none', bg: 'gray.100' }}
-                >
-                  ABOUT
-                </Link>
+              <Stack as="nav" mt="8">
+                {menus.map((menu, index) => {
+                  return (
+                    <Link
+                      key={index}
+                      color="blue.500"
+                      fontWeight="semibold"
+                      fontSize="xl"
+                      p="5"
+                      _hover={{ textDecoration: 'none', bg: 'gray.100' }}
+                    >
+                      {menu.label}
+                    </Link>
+                  );
+                })}
               </Stack>
             </DrawerBody>
           </DrawerContent>

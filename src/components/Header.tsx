@@ -1,11 +1,11 @@
 import React from 'react';
-import { HamburgerIcon } from '@chakra-ui/icons';
 import { Box, Flex, Heading, Stack } from '@chakra-ui/react';
 
-import NavItem from './NavItem';
+import { NavMenusType } from '../types';
+import Nav from './Nav';
 import NavDrawer from './NavDrawer';
 
-const headerItem = [
+const navMenus: NavMenusType = [
   {
     label: 'WORKS',
     href: '#works',
@@ -40,17 +40,15 @@ const Header: React.VFC = () => {
           PPHOS
         </Heading>
         <Box>
+          <Stack direction="row" display={{ base: 'block', md: 'none' }}>
+            <NavDrawer menus={navMenus} />
+          </Stack>
           <Stack
             direction="row"
             display={{ base: 'none', md: 'block' }}
             spacing="4"
           >
-            {headerItem.map((item, index) => {
-              return <NavItem label={item.label} href={item.href} />;
-            })}
-          </Stack>
-          <Stack direction="row" display={{ base: 'block', md: 'none' }}>
-            <NavDrawer />
+            <Nav menus={navMenus} />
           </Stack>
         </Box>
       </Flex>
