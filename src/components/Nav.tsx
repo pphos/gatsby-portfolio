@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from '@chakra-ui/react';
 
-import { NavMenusType } from '../types';
+import { NavMenuType } from '../types';
 
 type Props = {
-  menus: NavMenusType;
+  menus: NavMenuType[];
 };
 
 const Nav: React.VFC<Props> = ({ menus }) => {

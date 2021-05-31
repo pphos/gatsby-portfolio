@@ -6,7 +6,7 @@ const Hero: React.VFC = () => {
     <Flex
       alignItems="center"
       justifyContent="center"
-      height="85vh"
+      height={{ base: '85vh', md: '95vh' }}
       bgImage="linear-gradient(to left, rgba(54, 209, 220, 0.7) , rgba(91, 134, 229, 0.8)), url('/images/hero_image.jpg')"
     >
       <VStack spacing="1">

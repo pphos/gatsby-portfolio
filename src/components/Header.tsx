@@ -1,11 +1,11 @@
 import React from 'react';
 import { Box, Flex, Heading, Stack } from '@chakra-ui/react';
 
-import { NavMenusType } from '../types';
+import { NavMenuType } from '../types';
 import Nav from './Nav';
 import NavDrawer from './NavDrawer';
 
-const navMenus: NavMenusType = [
+const navMenus: NavMenuType[] = [
   {
     label: 'WORKS',
     href: '#works',

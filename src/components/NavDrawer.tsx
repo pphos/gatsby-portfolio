@@ -12,10 +12,10 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
-import { NavMenusType } from '../types';
+import { NavMenuType } from '../types';
 
 type Props = {
-  menus: NavMenusType;
+  menus: NavMenuType[];
 };
 
 const NavDrawer: React.VFC<Props> = ({ menus }) => {
