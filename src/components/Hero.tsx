@@ -10,7 +10,7 @@ const Hero: React.VFC = () => {
       bgImage="linear-gradient(to left, rgba(54, 209, 220, 0.7) , rgba(91, 134, 229, 0.8)), url('/images/hero_image.jpg')"
     >
       <VStack spacing="1">
-        <Heading size="2xl" letterSpacing="0.1em" color="white">
+        <Heading size="3xl" letterSpacing="0.1em" color="white">
           PPHOS
         </Heading>
         <Text
