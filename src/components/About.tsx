@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  VStack,
-  Flex,
-  Box,
-  Heading,
-  Text,
-  Image,
-  Center,
-} from '@chakra-ui/react';
+import { VStack, Flex, Heading, Text, Image, Center } from '@chakra-ui/react';
 
 const About: React.VFC = () => {
   return (

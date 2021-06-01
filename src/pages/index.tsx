@@ -4,6 +4,7 @@ import About from '../components/About';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Works from '../components/Works';
+import Skill from '../components/Skill';
 
 const Home: React.VFC = () => {
   return (
@@ -12,6 +13,7 @@ const Home: React.VFC = () => {
       <Hero />
       <Works />
       <About />
+      <Skill />
     </>
   );
 };
