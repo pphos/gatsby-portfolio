@@ -6,6 +6,7 @@ import {
   Grid,
   GridItem,
   Link,
+  Text,
   Image,
 } from '@chakra-ui/react';
 
@@ -42,28 +43,31 @@ const workItems: WorkType[] = [
 const Works: React.VFC = () => {
   return (
     <Box as="section" py="20" backgroundColor="gray.100" id="works">
-      <VStack>
-        <Heading as="h2" size="xl" color="blue.500" li>
+      <VStack px="10">
+        <Heading as="h2" size="xl" color="blue.500">
           WORKS
         </Heading>
         <Grid
           templateColumns={{
-            base: 'repeat(1, 1fr)',
             md: 'repeat(2, 1fr)',
             lg: 'repeat(3, 1fr)',
           }}
-          gap="10"
+          gap="5"
+          pt="5"
         >
           {workItems.map((item, index) => {
             return (
               <GridItem>
-                <Link>
+                <Link _hover={{ textDecoration: 'none' }}>
                   <Image
                     src={item.imageUrl}
                     alt=""
                     borderColor="gray.100"
                     mx="auto"
                   />
+                  <Text fontSize="md" textAlign="center" pt="2">
+                    {item.label}
+                  </Text>
                 </Link>
               </GridItem>
             );
