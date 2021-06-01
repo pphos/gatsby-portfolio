@@ -43,7 +43,7 @@ const workItems: WorkType[] = [
 const Works: React.VFC = () => {
   return (
     <Box as="section" py="20" backgroundColor="gray.100" id="works">
-      <VStack px="10">
+      <VStack maxWidth={{ base: 'sm', md: '2xl', lg: '4xl' }} mx="auto">
         <Heading as="h2" size="xl" color="blue.500">
           WORKS
         </Heading>
