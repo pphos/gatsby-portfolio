@@ -1,9 +1,9 @@
 import React from 'react';
 import { Box, Flex, Heading, Stack } from '@chakra-ui/react';
 
-import { NavMenuType } from '../types';
-import Nav from './Nav';
-import NavDrawer from './NavDrawer';
+import { NavMenuType } from '../../types';
+import Nav from '../parts/Nav';
+import NavDrawer from '../parts/NavDrawer';
 
 const navMenus: NavMenuType[] = [
   {

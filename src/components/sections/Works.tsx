@@ -10,7 +10,7 @@ import {
   Image,
 } from '@chakra-ui/react';
 
-import { WorkType } from '../types';
+import { WorkType } from '../../types';
 
 const workItems: WorkType[] = [
   {

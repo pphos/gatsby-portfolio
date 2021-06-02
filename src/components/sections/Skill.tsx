@@ -1,7 +1,7 @@
 import React from 'react';
 import { VStack, Flex, SimpleGrid, Heading } from '@chakra-ui/react';
 
-import BadgePanel from './BadgePanel';
+import BadgePanel from '../parts/BadgePanel';
 
 const bussinessSkill = [
   'AWS',
