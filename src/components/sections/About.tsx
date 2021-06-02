@@ -35,10 +35,10 @@ const About: React.VFC = () => {
             pt={{ base: '5', md: '0' }}
           >
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reprehenderit animi quos saepe qui debitis, neque mollitia
-              dignissimos voluptatibus fuga ratione at, ad impedit? Dignissimos
-              consequuntur hic sapiente suscipit laudantium magni.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              quia illum dolores rem, explicabo obcaecati ratione quo?
+              Reprehenderit, magni libero voluptates a labore corrupti esse,
+              sequi repellendus tempore vel ipsa?
             </Text>
           </Center>
         </Flex>

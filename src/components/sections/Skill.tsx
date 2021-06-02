@@ -44,7 +44,7 @@ const Skill: React.VFC = () => {
         <SimpleGrid
           columns={{ base: 1, md: 2, lg: 3 }}
           spacing="10"
-          px={{ base: 35, md: 20 }}
+          px={{ base: 35, md: 15 }}
           pt="5"
         >
           <BadgePanel title="Bussiness" labels={bussinessSkill} />

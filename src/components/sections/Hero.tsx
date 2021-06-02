@@ -10,19 +10,24 @@ const Hero: React.VFC = () => {
       bgImage="linear-gradient(to left, rgba(54, 209, 220, 0.7) , rgba(91, 134, 229, 0.8)), url('/images/hero_image.jpg')"
     >
       <VStack spacing="1">
-        <Heading size="3xl" letterSpacing="0.1em" color="white">
+        <Heading size="4xl" letterSpacing="0.1em" color="white">
           PPHOS
         </Heading>
         <Text
-          fontSize={{ base: 'lg', md: 'xl' }}
+          fontSize={{ base: 'xl', md: '2xl' }}
           fontWeight="bold"
           letterSpacing="0.1em"
           color="white"
         >
           PORTFOLIO
         </Text>
-        <Text fontSize={{ base: 'md', md: 'lg' }} color="white" pt="3">
-          私のポートフォリオサイトです。
+        <Text
+          fontSize={{ base: '2xl', md: '3xl' }}
+          fontWeight="semibold"
+          color="white"
+          pt="3"
+        >
+          Cloud Enginner
         </Text>
       </VStack>
     </Flex>

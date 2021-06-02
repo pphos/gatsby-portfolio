@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
-import { NavMenuType } from '../types';
+import { NavMenuType } from '../../types';
 
 type Props = {
   menus: NavMenuType[];

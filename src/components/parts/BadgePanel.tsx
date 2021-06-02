@@ -12,7 +12,7 @@ const BadgePanel: React.VFC<Props> = ({ title, labels }) => {
       <Heading as="h3" size="md" textAlign="center" py="5">
         {title}
       </Heading>
-      <Flex flexWrap="wrap" justifyContent="start" mx={3}>
+      <Flex flexWrap="wrap" justifyContent="start" mx={{ base: 3, md: 2 }}>
         {labels.map((label, index) => {
           return (
             <Badge

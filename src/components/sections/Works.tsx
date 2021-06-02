@@ -14,28 +14,18 @@ import { WorkType } from '../../types';
 
 const workItems: WorkType[] = [
   {
-    imageUrl: '/images/works-sample-thumb.jpg',
-    label: '作品名が入る',
+    imageUrl: '/images/works-dummy-thumb.jpg',
+    label: 'ポートフォリオサイト',
     info: 'Design / Coding(Responsive) / WordPress',
   },
   {
     imageUrl: '/images/works-dummy-thumb.jpg',
-    label: '作品名が入る',
+    label: 'あとだしじゃんけん',
     info: 'Design / Coding(Responsive) / WordPress',
   },
   {
     imageUrl: '/images/works-dummy-thumb.jpg',
-    label: '作品名が入る',
-    info: 'Design / Coding(Responsive) / WordPress',
-  },
-  {
-    imageUrl: '/images/works-dummy-thumb.jpg',
-    label: '作品名が入る',
-    info: 'Design / Coding(Responsive) / WordPress',
-  },
-  {
-    imageUrl: '/images/works-dummy-thumb.jpg',
-    label: '作品名が入る',
+    label: '画像分類 (じゃんけん）',
     info: 'Design / Coding(Responsive) / WordPress',
   },
 ];

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from '@chakra-ui/react';
 
-import { NavMenuType } from '../types';
+import { NavMenuType } from '../../types';
 
 type Props = {
   menus: NavMenuType[];
