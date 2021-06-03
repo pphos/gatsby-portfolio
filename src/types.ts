@@ -6,5 +6,6 @@ export type NavMenuType = {
 export type WorkType = {
   imageUrl: string,
   label: string,
-  info: string
+  info: string,
+  technology: string[]
 };

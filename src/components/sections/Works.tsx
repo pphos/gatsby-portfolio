@@ -1,15 +1,7 @@
 import React from 'react';
-import {
-  Box,
-  Heading,
-  VStack,
-  Grid,
-  GridItem,
-  Link,
-  Text,
-  Image,
-} from '@chakra-ui/react';
+import { Box, Heading, VStack, Grid } from '@chakra-ui/react';
 
+import Card from '../parts/Card';
 import { WorkType } from '../../types';
 
 const workItems: WorkType[] = [
@@ -17,16 +9,19 @@ const workItems: WorkType[] = [
     imageUrl: '/images/works-dummy-thumb.jpg',
     label: 'ポートフォリオサイト',
     info: 'Design / Coding(Responsive) / WordPress',
+    technology: ['React', 'Gatsby', 'Chakra UI'],
   },
   {
     imageUrl: '/images/works-dummy-thumb.jpg',
     label: 'あとだしじゃんけん',
     info: 'Design / Coding(Responsive) / WordPress',
+    technology: ['React', 'React Spring', 'Tailwindcss', 'Tensorflowjs'],
   },
   {
     imageUrl: '/images/works-dummy-thumb.jpg',
     label: '画像分類 (じゃんけん）',
     info: 'Design / Coding(Responsive) / WordPress',
+    technology: ['Python', 'Keras', 'Matplotlib', 'OpenCV', 'Scikit-learn'],
   },
 ];
 
@@ -46,21 +41,7 @@ const Works: React.VFC = () => {
           pt="5"
         >
           {workItems.map((item, index) => {
-            return (
-              <GridItem>
-                <Link _hover={{ textDecoration: 'none' }}>
-                  <Image
-                    src={item.imageUrl}
-                    alt=""
-                    borderColor="gray.100"
-                    mx="auto"
-                  />
-                  <Text fontSize="md" textAlign="center" pt="2">
-                    {item.label}
-                  </Text>
-                </Link>
-              </GridItem>
-            );
+            return <Card item={item} key={index} />;
           })}
         </Grid>
       </VStack>
