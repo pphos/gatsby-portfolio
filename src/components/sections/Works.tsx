@@ -6,21 +6,23 @@ import { WorkType } from '../../types';
 
 const workItems: WorkType[] = [
   {
-    imageUrl: '/images/works-dummy-thumb.jpg',
+    imageUrl: '/images/works-gatsby-portfolio.png',
     label: 'ポートフォリオサイト',
-    info: 'Design / Coding(Responsive) / WordPress',
+    info:
+      'GatsbyとChakra UIの練習も兼ねて作成しました。レスポンシブ対応はまだ甘いです。',
     technology: ['React', 'Gatsby', 'Chakra UI'],
   },
   {
-    imageUrl: '/images/works-dummy-thumb.jpg',
+    imageUrl: '/images/works-react-rps.png',
     label: 'あとだしじゃんけん',
-    info: 'Design / Coding(Responsive) / WordPress',
+    info: '某脳トレゲームをReactとTensorflowjsを使って再現しました。',
     technology: ['React', 'React Spring', 'Tailwindcss', 'Tensorflowjs'],
   },
   {
     imageUrl: '/images/works-dummy-thumb.jpg',
     label: '画像分類 (じゃんけん）',
-    info: 'Design / Coding(Responsive) / WordPress',
+    info:
+      '画像分類モデルをKerasで作成しました。学習画像の生成から前処理のしっかりおこなっています。',
     technology: ['Python', 'Keras', 'Matplotlib', 'OpenCV', 'Scikit-learn'],
   },
 ];
@@ -28,7 +30,7 @@ const workItems: WorkType[] = [
 const Works: React.VFC = () => {
   return (
     <Box as="section" py="20" backgroundColor="gray.100" id="works">
-      <VStack maxWidth={{ base: 'sm', md: '2xl', lg: '4xl' }} mx="auto">
+      <VStack maxWidth={{ base: 'lg', md: '2xl', lg: '6xl' }} mx="auto" p="6">
         <Heading as="h2" size="xl" color="blue.500">
           WORKS
         </Heading>

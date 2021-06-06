@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Badge, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Flex, Badge, Heading, Image, Text } from '@chakra-ui/react';
 
 import { WorkType } from '../../types';
 
@@ -16,7 +16,9 @@ const Card: React.VFC<Props> = ({ item }) => {
       overflow="hidden"
       backgroundColor="white"
     >
-      <Image src={item.imageUrl} alt="" />
+      <Flex alignItems="center" p="3" minHeight={{ md: '20rem' }}>
+        <Image src={item.imageUrl} />
+      </Flex>
       <Box p="3">
         <Heading
           mt="1"

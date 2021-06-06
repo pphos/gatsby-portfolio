@@ -10,7 +10,7 @@ const About: React.VFC = () => {
       id="About"
       height="80vh"
     >
-      <VStack maxWidth={{ base: 'sm', md: '2xl', lg: '4xl' }}>
+      <VStack maxWidth={{ base: 'sm', md: '2xl', lg: '4xl' }} px="6">
         <Heading as="h2" size="xl" color="blue.500">
           ABOUT
         </Heading>
@@ -22,7 +22,7 @@ const About: React.VFC = () => {
         >
           <Image
             borderRadius="full"
-            src="/images/profile.jpg"
+            src="/images/profile.png"
             alt=""
             width={{ base: '30%', md: '15%' }}
             mx={{ base: 'auto', md: '0' }}
@@ -35,10 +35,7 @@ const About: React.VFC = () => {
             pt={{ base: '5', md: '0' }}
           >
             <Text>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              quia illum dolores rem, explicabo obcaecati ratione quo?
-              Reprehenderit, magni libero voluptates a labore corrupti esse,
-              sequi repellendus tempore vel ipsa?
+              大学で情報工学を学び、学士及び修士研究では機械学習を用いた画像認識に取り組む。その後、新卒で都内の通信会社にエンジニアとして入社し、AWS上でCloudFormationを活用したシステム構築業務に従事。
             </Text>
           </Center>
         </Flex>
