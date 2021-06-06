@@ -7,7 +7,7 @@ const About: React.VFC = () => {
       as="section"
       alignItems="center"
       justifyContent="center"
-      id="About"
+      id="about"
       height="80vh"
     >
       <VStack maxWidth={{ base: 'sm', md: '2xl', lg: '4xl' }} px="6">

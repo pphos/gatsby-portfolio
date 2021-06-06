@@ -35,7 +35,7 @@ const Skill: React.VFC = () => {
       backgroundColor="gray.100"
       py={{ base: 20, lg: 0 }}
       height={{ base: 'full', lg: '80vh' }}
-      id="Skill"
+      id="skill"
     >
       <VStack width={{ base: '75%', md: '80%', lg: '75%' }}>
         <Heading as="h2" size="xl" color="blue.500">

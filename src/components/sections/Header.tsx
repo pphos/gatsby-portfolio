@@ -11,12 +11,12 @@ const navMenus: NavMenuType[] = [
     href: '#works',
   },
   {
-    label: 'SKILL',
-    href: '#skill',
+    label: 'ABOUT',
+    href: '#about',
   },
   {
-    label: 'ABOUT',
-    href: '#link',
+    label: 'SKILL',
+    href: '#skill',
   },
 ];
 
