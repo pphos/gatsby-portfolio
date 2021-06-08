@@ -7,7 +7,7 @@ export type NavMenuType = {
 // セクション別の型定義
 export type HeaderDataType = {
   title: string,
-  menu: NavMenuType[]
+  menus: NavMenuType[]
 };
 
 export type HeroDataType = {

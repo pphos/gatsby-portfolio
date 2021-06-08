@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Flex, Heading, VStack, Text } from '@chakra-ui/react';
 
+import { PortfolioContext } from '../../context';
+
 const Hero: React.VFC = () => {
+  const { heroData } = useContext(PortfolioContext);
+  const { title, subtitle, lead } = heroData;
+
   return (
     <Flex
       alignItems="center"
@@ -11,7 +16,7 @@ const Hero: React.VFC = () => {
     >
       <VStack spacing="1">
         <Heading size="4xl" letterSpacing="0.1em" color="white">
-          PPHOS
+          {title}
         </Heading>
         <Text
           fontSize={{ base: 'xl', md: '2xl' }}
@@ -19,7 +24,7 @@ const Hero: React.VFC = () => {
           letterSpacing="0.1em"
           color="white"
         >
-          PORTFOLIO
+          {subtitle}
         </Text>
         <Text
           fontSize={{ base: '2xl', md: '3xl' }}
@@ -27,7 +32,7 @@ const Hero: React.VFC = () => {
           color="white"
           pt="3"
         >
-          Cloud Enginner
+          {lead}
         </Text>
       </VStack>
     </Flex>

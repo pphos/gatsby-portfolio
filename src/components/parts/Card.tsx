@@ -3,11 +3,12 @@ import { Box, Flex, Badge, Heading, Image, Text } from '@chakra-ui/react';
 
 import { WorksItemType } from '../../types';
 
-type Props = {
-  item: WorksItemType;
-};
-
-const Card: React.VFC<Props> = ({ item }) => {
+const Card: React.VFC<WorksItemType> = ({
+  imageUrl,
+  label,
+  info,
+  technology,
+}) => {
   return (
     <Box
       maxW="sm"
@@ -17,7 +18,7 @@ const Card: React.VFC<Props> = ({ item }) => {
       backgroundColor="white"
     >
       <Flex alignItems="center" p="3" minHeight={{ md: '20rem' }}>
-        <Image src={item.imageUrl} />
+        <Image src={imageUrl} />
       </Flex>
       <Box p="3">
         <Heading
@@ -27,11 +28,11 @@ const Card: React.VFC<Props> = ({ item }) => {
           lineHeight="tight"
           textAlign="center"
         >
-          {item.label}
+          {label}
         </Heading>
-        <Text pt="3">{item.info}</Text>
+        <Text pt="3">{info}</Text>
         <Box pt="2">
-          {item.technology.map((technology, index) => {
+          {technology.map((tech, index) => {
             return (
               <Badge
                 key={index}
@@ -43,7 +44,7 @@ const Card: React.VFC<Props> = ({ item }) => {
                 textTransform="none"
                 m={1}
               >
-                {technology}
+                {tech}
               </Badge>
             );
           })}

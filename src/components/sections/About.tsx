@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { VStack, Flex, Heading, Text, Image, Center } from '@chakra-ui/react';
 
+import { PortfolioContext } from '../../context';
+
 const About: React.VFC = () => {
+  const { aboutData } = useContext(PortfolioContext);
+  const { imageUrl, resume } = aboutData;
+
   return (
     <Flex
       as="section"
@@ -22,7 +27,7 @@ const About: React.VFC = () => {
         >
           <Image
             borderRadius="full"
-            src="/images/profile.png"
+            src={imageUrl}
             alt=""
             width={{ base: '30%', md: '15%' }}
             mx={{ base: 'auto', md: '0' }}
@@ -34,9 +39,7 @@ const About: React.VFC = () => {
             flexBasis={0}
             pt={{ base: '5', md: '0' }}
           >
-            <Text>
-              大学で情報工学を学び、学士及び修士研究では機械学習を用いた画像認識に取り組む。その後、新卒で都内の通信会社にエンジニアとして入社し、AWS上でCloudFormationを活用したシステム構築業務に従事。
-            </Text>
+            <Text>{resume}</Text>
           </Center>
         </Flex>
       </VStack>

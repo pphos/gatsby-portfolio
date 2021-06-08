@@ -1,32 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { VStack, Flex, SimpleGrid, Heading } from '@chakra-ui/react';
 
 import BadgePanel from '../parts/BadgePanel';
-
-const bussinessSkill = [
-  'AWS',
-  'Javascript',
-  'Python',
-  'Lambda',
-  'CloudFormation',
-];
-const hobbySkill = [
-  'React',
-  'Gatsby',
-  'Tailwindcss',
-  'Chakra UI',
-  'TypeScript',
-  'Rust',
-];
-const certificationSkill = [
-  'AWS SOA',
-  'AWS DVA',
-  'AWS SAA',
-  '応用情報技術者',
-  '基本情報技術者',
-];
+import { PortfolioContext } from '../../context';
 
 const Skill: React.VFC = () => {
+  const { skillData } = useContext(PortfolioContext);
+  const { skills } = skillData;
+
   return (
     <Flex
       as="section"
@@ -47,9 +28,15 @@ const Skill: React.VFC = () => {
           px={{ base: 'xl', md: 10 }}
           pt="5"
         >
-          <BadgePanel title="Bussiness" labels={bussinessSkill} />
-          <BadgePanel title="Hobby" labels={hobbySkill} />
-          <BadgePanel title="Certification" labels={certificationSkill} />
+          {skills.map((skill, index) => {
+            return (
+              <BadgePanel
+                title={skill.title}
+                labels={skill.technology}
+                key={index}
+              />
+            );
+          })}
         </SimpleGrid>
       </VStack>
     </Flex>

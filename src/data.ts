@@ -9,7 +9,7 @@ import {
 // Header用データ
 export const headerData: HeaderDataType = {
   title: 'PPHOS',
-  menu: [
+  menus: [
     {
       label: 'WORKS',
       href: '#works',

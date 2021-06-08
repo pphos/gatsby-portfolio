@@ -1,26 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Box, Flex, Heading, Stack } from '@chakra-ui/react';
 
-import { NavMenuType } from '../../types';
 import Nav from '../parts/Nav';
 import NavDrawer from '../parts/NavDrawer';
-
-const navMenus: NavMenuType[] = [
-  {
-    label: 'WORKS',
-    href: '#works',
-  },
-  {
-    label: 'ABOUT',
-    href: '#about',
-  },
-  {
-    label: 'SKILL',
-    href: '#skill',
-  },
-];
+import { PortfolioContext } from '../../context';
 
 const Header: React.VFC = () => {
+  const { headerData } = useContext(PortfolioContext);
+  const { title, menus } = headerData;
+
   return (
     <Box
       as="header"
@@ -37,18 +25,18 @@ const Header: React.VFC = () => {
         px={{ base: 5, md: 20 }}
       >
         <Heading as="h1" size="lg" color="blue.400">
-          PPHOS
+          {title}
         </Heading>
         <Box>
           <Stack direction="row" display={{ base: 'block', md: 'none' }}>
-            <NavDrawer menus={navMenus} />
+            <NavDrawer menus={menus} />
           </Stack>
           <Stack
             direction="row"
             display={{ base: 'none', md: 'block' }}
             spacing="4"
           >
-            <Nav menus={navMenus} />
+            <Nav menus={menus} />
           </Stack>
         </Box>
       </Flex>
