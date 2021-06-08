@@ -1,10 +1,10 @@
 import React from 'react';
 import { Box, Flex, Badge, Heading, Image, Text } from '@chakra-ui/react';
 
-import { WorkType } from '../../types';
+import { WorksItemType } from '../../types';
 
 type Props = {
-  item: WorkType;
+  item: WorksItemType;
 };
 
 const Card: React.VFC<Props> = ({ item }) => {

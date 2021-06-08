@@ -2,9 +2,9 @@ import React from 'react';
 import { Box, Heading, VStack, Grid } from '@chakra-ui/react';
 
 import Card from '../parts/Card';
-import { WorkType } from '../../types';
+import { WorksItemType } from '../../types';
 
-const workItems: WorkType[] = [
+const workItems: WorksItemType[] = [
   {
     imageUrl: '/images/works-gatsby-portfolio.png',
     label: 'ポートフォリオサイト',

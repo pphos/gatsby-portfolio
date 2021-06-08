@@ -2,8 +2,8 @@ import React from 'react';
 import { Box, Flex, Heading, Badge } from '@chakra-ui/react';
 
 type Props = {
-  title: String;
-  labels: String[];
+  title: string;
+  labels: string[];
 };
 
 const BadgePanel: React.VFC<Props> = ({ title, labels }) => {

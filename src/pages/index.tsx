@@ -5,17 +5,19 @@ import Header from '../components/sections/Header';
 import Hero from '../components/sections/Hero';
 import Works from '../components/sections/Works';
 import Skill from '../components/sections/Skill';
+import { PortfolioContext } from '../context';
+import { headerData, heroData, worksData, aboutData, skillData } from '../data';
 
-const Home: React.VFC = () => {
+export default () => {
   return (
-    <>
+    <PortfolioContext.Provider
+      value={{ headerData, heroData, worksData, aboutData, skillData }}
+    >
       <Header />
       <Hero />
       <Works />
       <About />
       <Skill />
-    </>
+    </PortfolioContext.Provider>
   );
 };
-
-export default Home;
