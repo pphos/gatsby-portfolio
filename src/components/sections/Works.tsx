@@ -19,10 +19,10 @@ const workItems: WorkType[] = [
     technology: ['React', 'React Spring', 'Tailwindcss', 'Tensorflowjs'],
   },
   {
-    imageUrl: '/images/works-dummy-thumb.jpg',
+    imageUrl: '/images/works-keras-mnist.png',
     label: '画像分類 (じゃんけん）',
     info:
-      '画像分類モデルをKerasで作成しました。学習画像の生成から前処理のしっかりおこなっています。',
+      '定番モデルをKerasで作成しました。学習画像の生成から前処理も行いました。',
     technology: ['Python', 'Keras', 'Matplotlib', 'OpenCV', 'Scikit-learn'],
   },
 ];
