@@ -11,22 +11,22 @@ const Works: React.VFC = () => {
 
   return (
     <Box as="section" py="20" backgroundColor="gray.100" id="works">
-      <FadeInUpBox>
-        <VStack maxWidth={{ base: 'lg', md: '2xl', lg: '6xl' }} mx="auto" p="6">
-          <Heading as="h2" size="xl" color="blue.500">
-            WORKS
-          </Heading>
-          <Grid
-            templateColumns={{
-              md: 'repeat(2, 1fr)',
-              lg: 'repeat(3, 1fr)',
-            }}
-            gap="5"
-            pt="5"
-          >
-            {works.map((work, index) => {
-              const { imageUrl, label, info, technology } = work;
-              return (
+      <VStack maxWidth={{ base: 'lg', md: '2xl', lg: '6xl' }} mx="auto" p="6">
+        <Heading as="h2" size="xl" color="blue.500">
+          WORKS
+        </Heading>
+        <Grid
+          templateColumns={{
+            md: 'repeat(2, 1fr)',
+            lg: 'repeat(3, 1fr)',
+          }}
+          gap="5"
+          pt="5"
+        >
+          {works.map((work, index) => {
+            const { imageUrl, label, info, technology } = work;
+            return (
+              <FadeInUpBox>
                 <Card
                   imageUrl={imageUrl}
                   label={label}
@@ -34,11 +34,11 @@ const Works: React.VFC = () => {
                   technology={technology}
                   key={index}
                 />
-              );
-            })}
-          </Grid>
-        </VStack>
-      </FadeInUpBox>
+              </FadeInUpBox>
+            );
+          })}
+        </Grid>
+      </VStack>
     </Box>
   );
 };

@@ -19,29 +19,29 @@ const Skill: React.VFC = () => {
       height={{ base: 'full', lg: '80vh' }}
       id="skill"
     >
-      <FadeInUpBox>
-        <VStack width={{ base: '75%', md: '80%', lg: '75%' }} mx="auto">
-          <Heading as="h2" size="xl" color="blue.500">
-            SKILL
-          </Heading>
-          <SimpleGrid
-            columns={{ base: 1, md: 2, lg: 3 }}
-            spacing="10"
-            px={{ base: 'xl', md: 10 }}
-            pt="5"
-          >
-            {skills.map((skill, index) => {
-              return (
+      <VStack width={{ base: '75%', md: '80%', lg: '75%' }}>
+        <Heading as="h2" size="xl" color="blue.500">
+          SKILL
+        </Heading>
+        <SimpleGrid
+          columns={{ base: 1, md: 2, lg: 3 }}
+          spacing="10"
+          px={{ base: 'xl', md: 10 }}
+          pt="5"
+        >
+          {skills.map((skill, index) => {
+            return (
+              <FadeInUpBox>
                 <BadgePanel
                   title={skill.title}
                   labels={skill.technology}
                   key={index}
                 />
-              );
-            })}
-          </SimpleGrid>
-        </VStack>
-      </FadeInUpBox>
+              </FadeInUpBox>
+            );
+          })}
+        </SimpleGrid>
+      </VStack>
     </Flex>
   );
 };
