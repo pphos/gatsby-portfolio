@@ -6,6 +6,13 @@ import {
   SkillDataType
 } from './types';
 
+// メタデータ
+export const metaData = {
+  title: 'Phos\'s Portfolio Site',
+  lang: 'ja',
+  description: 'Phos\'s Portfolio Site made with Gatsby, Typescript and Chakra UI.'
+}
+
 // Header用データ
 export const headerData: HeaderDataType = {
   title: 'PPHOS',

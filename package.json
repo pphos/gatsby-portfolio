@@ -21,8 +21,10 @@
     "@emotion/styled": "^11",
     "framer-motion": "^4",
     "gatsby": "^3.4.1",
+    "gatsby-plugin-react-helmet": "^4.7.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
     "react-intersection-observer": "^8.32.0"
   },
   "devDependencies": {
