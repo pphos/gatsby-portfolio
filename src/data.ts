@@ -36,7 +36,7 @@ export const headerData: HeaderDataType = {
 export const heroData: HeroDataType = {
   title: 'PPHOS',
   subtitle: 'PORTFOLIO',
-  lead: 'Cloud Enginner',
+  lead: 'Cloud Fledgling Enginner',
 };
 
 // Works用データ
@@ -96,6 +96,7 @@ export const skillData: SkillDataType = {
     {
       title: 'Certification',
       technology: [
+        'AWS SAP',
         'AWS SOA',
         'AWS DVA',
         'AWS SAA',
